@@ -25,7 +25,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        isScrolled ? "py-4 bg-salon-black/80 backdrop-blur-lg border-b border-white/10" : "py-6 bg-transparent"
+        isScrolled ? "py-4 bg-pink/80 backdrop-blur-lg border-b border-wine/10 shadow-sm" : "py-6 bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -37,14 +37,14 @@ export const Navbar = () => {
           <img 
             src="https://res.cloudinary.com/dm7sxhaeb/image/upload/v1773742544/IMG-20260316-WA0006_wefwsm.jpg" 
             alt="Switchesty Beauty Logo" 
-            className="h-12 w-auto rounded-full border border-gold/30"
+            className="h-12 w-auto rounded-full border border-wine/30"
             referrerPolicy="no-referrer"
           />
           <div className="flex flex-col">
-            <span className="text-xl font-display font-bold tracking-tighter text-gradient-gold leading-none">
+            <span className="text-xl font-display font-bold tracking-tighter text-gradient-wine leading-none">
               SWITCHESTY
             </span>
-            <span className="text-[10px] tracking-[0.3em] font-light text-white/60 mt-1 leading-none">BEAUTY</span>
+            <span className="text-[10px] tracking-[0.3em] font-light text-wine/60 mt-1 leading-none">BEAUTY</span>
           </div>
         </motion.div>
 
@@ -57,7 +57,7 @@ export const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="text-sm font-medium text-white/70 hover:text-gold transition-colors"
+              className="text-sm font-medium text-wine/70 hover:text-wine transition-colors"
             >
               {link.name}
             </motion.a>
@@ -65,7 +65,7 @@ export const Navbar = () => {
           <motion.button
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="px-6 py-2 rounded-full border border-gold/50 text-gold text-sm font-medium hover:bg-gold hover:text-salon-black transition-all"
+            className="px-6 py-2 rounded-full border border-wine/50 text-wine text-sm font-medium hover:bg-wine hover:text-pink transition-all"
           >
             Book Now
           </motion.button>
@@ -73,7 +73,7 @@ export const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-white"
+          className="md:hidden text-wine"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -87,7 +87,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-salon-black border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-pink border-b border-wine/10 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {navLinks.map((link) => (
@@ -95,12 +95,12 @@ export const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium text-white/80 hover:text-gold"
+                  className="text-lg font-medium text-wine/80 hover:text-wine"
                 >
                   {link.name}
                 </a>
               ))}
-              <button className="w-full py-3 rounded-xl bg-gold text-salon-black font-bold mt-2">
+              <button className="w-full py-3 rounded-xl bg-wine text-pink font-bold mt-2">
                 Book Appointment
               </button>
             </div>

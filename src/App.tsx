@@ -97,11 +97,11 @@ export default function App() {
           <img 
             src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1920" 
             alt="Salon Background"
-            className="w-full h-full object-cover opacity-40 scale-105"
+            className="w-full h-full object-cover opacity-20 scale-105"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-salon-black via-transparent to-salon-black" />
-          <div className="absolute inset-0 bg-gradient-to-r from-salon-black via-salon-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-pink via-transparent to-pink" />
+          <div className="absolute inset-0 bg-gradient-to-r from-pink via-pink/40 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -115,15 +115,15 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-gold font-medium tracking-[0.4em] uppercase text-sm mb-4 block"
+              className="text-wine font-medium tracking-[0.4em] uppercase text-sm mb-4 block"
             >
               Luxury Beauty Studio
             </motion.span>
             <h1 className="text-6xl md:text-8xl font-display font-bold leading-tight mb-6">
               Beauty, Confidence <br />
-              <span className="text-gradient-gold italic">& Style</span>
+              <span className="text-gradient-wine italic">& Style</span>
             </h1>
-            <p className="text-lg text-white/70 mb-10 leading-relaxed max-w-lg">
+            <p className="text-lg text-wine/70 mb-10 leading-relaxed max-w-lg">
               A professional beauty studio offering premium nail care, hair styling, 
               braiding, and grooming services designed to enhance your confidence 
               and personal style.
@@ -149,23 +149,23 @@ export default function App() {
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           className="absolute bottom-20 right-20 hidden lg:block"
         >
-          <div className="glass p-8 rounded-3xl border-gold/20">
+          <div className="glass p-8 rounded-3xl border-wine/20">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold">
+              <div className="w-12 h-12 rounded-full bg-wine/10 flex items-center justify-center text-wine">
                 <Sparkles size={24} />
               </div>
               <div>
                 <p className="text-sm font-bold">Premium Care</p>
-                <p className="text-xs text-white/60">Expert Stylists</p>
+                <p className="text-xs text-wine/60">Expert Stylists</p>
               </div>
             </div>
             <div className="flex -space-x-2">
               {[1,2,3,4].map(i => (
-                <div key={i} className="w-8 h-8 rounded-full border-2 border-salon-black bg-zinc-800 overflow-hidden">
+                <div key={i} className="w-8 h-8 rounded-full border-2 border-pink bg-zinc-800 overflow-hidden">
                   <img src={`https://i.pravatar.cc/150?u=${i}`} alt="User" />
                 </div>
               ))}
-              <div className="w-8 h-8 rounded-full border-2 border-salon-black bg-gold flex items-center justify-center text-[10px] font-bold text-salon-black">
+              <div className="w-8 h-8 rounded-full border-2 border-pink bg-wine flex items-center justify-center text-[10px] font-bold text-pink">
                 +50
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-salon-black relative">
+      <section id="about" className="py-24 bg-pink relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -183,7 +183,7 @@ export default function App() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-white/10">
+              <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-wine/10">
                 <img 
                   src="https://scontent-jnb2-1.xx.fbcdn.net/v/t1.6435-9/164822418_120044610137860_6872059727770519010_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9R48clgDcZoQ7kNvwERe6Ho&_nc_oc=AdnoR0nzCyspvZQ74AUha8dJMNLAN-BxFhOeMgChbqMTMdntNrl_DaKLeujDaYx4_0g&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=fOle9W2LbSCxGv0_toF9WA&_nc_ss=8&oh=00_AfzriLxC6s1qgoR8g9C-yCpg2_oyR-rXUKhNymX9WEMB1Q&oe=69E09B57" 
                   alt="Salon Interior"
@@ -192,8 +192,8 @@ export default function App() {
                 />
               </div>
               <div className="absolute -bottom-10 -right-10 glass p-8 rounded-2xl hidden lg:block">
-                <p className="text-4xl font-display font-bold text-gold mb-1">100%</p>
-                <p className="text-sm text-white/60 uppercase tracking-widest">Satisfaction</p>
+                <p className="text-4xl font-display font-bold text-wine mb-1">100%</p>
+                <p className="text-sm text-wine/60 uppercase tracking-widest">Satisfaction</p>
               </div>
             </motion.div>
 
@@ -203,9 +203,9 @@ export default function App() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">
-                About <span className="text-gold">Switchesty Beauty</span>
+                About <span className="text-wine">Switchesty Beauty</span>
               </h2>
-              <div className="space-y-6 text-white/70 leading-relaxed">
+              <div className="space-y-6 text-wine/70 leading-relaxed">
                 <p>
                   Switchesty Beauty is a professional beauty studio located in Vanderbijlpark, 
                   offering expert nail care, hair styling, and grooming services for women, 
@@ -226,8 +226,8 @@ export default function App() {
                   { icon: <Heart size={20} />, text: "Personalized Care" },
                   { icon: <MapPin size={20} />, text: "Clean Environment" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 text-white/80">
-                    <div className="text-gold">{item.icon}</div>
+                  <div key={i} className="flex items-center gap-3 text-wine/80">
+                    <div className="text-wine">{item.icon}</div>
                     <span className="text-sm font-medium">{item.text}</span>
                   </div>
                 ))}
@@ -238,12 +238,12 @@ export default function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 bg-zinc-950/50">
+      <section id="services" className="py-24 bg-rose/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Our Services</h2>
-            <div className="w-24 h-1 bg-gold mx-auto rounded-full mb-6" />
-            <p className="text-white/60 max-w-2xl mx-auto">
+            <div className="w-24 h-1 bg-wine mx-auto rounded-full mb-6" />
+            <p className="text-wine/60 max-w-2xl mx-auto">
               Indulge in our range of premium beauty treatments designed to make you look and feel your absolute best.
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function App() {
                   viewport={{ once: true }}
                   className="text-2xl font-display font-bold mb-8 flex items-center gap-4"
                 >
-                  <span className="text-gold">0{catIdx + 1}.</span>
+                  <span className="text-wine">0{catIdx + 1}.</span>
                   {category}
                 </motion.h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -278,16 +278,16 @@ export default function App() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-24 bg-salon-black">
+      <section id="gallery" className="py-24 bg-pink">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">The Gallery</h2>
-              <p className="text-white/60">A glimpse into our world of beauty and style.</p>
+              <p className="text-wine/60">A glimpse into our world of beauty and style.</p>
             </div>
             <div className="flex gap-4">
               {["All", "Nails", "Braids", "Kids"].map(filter => (
-                <button key={filter} className="text-sm font-medium text-white/40 hover:text-gold transition-colors">
+                <button key={filter} className="text-sm font-medium text-wine/40 hover:text-wine transition-colors">
                   {filter}
                 </button>
               ))}
@@ -302,7 +302,7 @@ export default function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="relative group rounded-3xl overflow-hidden border border-white/10"
+                className="relative group rounded-3xl overflow-hidden border border-wine/10"
               >
                 <img 
                   src={img.url} 
@@ -310,8 +310,8 @@ export default function App() {
                   className="w-full h-auto transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-salon-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <span className="text-xs font-bold tracking-widest uppercase text-gold">{img.category}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-pink/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-xs font-bold tracking-widest uppercase text-wine">{img.category}</span>
                 </div>
               </motion.div>
             ))}
@@ -322,50 +322,50 @@ export default function App() {
       {/* Booking Section */}
       <section id="booking" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/10 blur-[120px] rounded-full" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-nude/10 blur-[120px] rounded-full" />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-wine/10 blur-[120px] rounded-full" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-rose/10 blur-[120px] rounded-full" />
         </div>
 
         <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <div className="glass-dark p-10 md:p-16 rounded-[40px] border-white/10">
+          <div className="glass-dark p-10 md:p-16 rounded-[40px] border-wine/10">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-display font-bold mb-4">Book Your Appointment</h2>
-              <p className="text-white/60">Choose your service and reserve your time with our professional stylists.</p>
+              <p className="text-wine/60">Choose your service and reserve your time with our professional stylists.</p>
             </div>
 
             <form onSubmit={handleBookingSubmit} className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Select Service</label>
+                  <label className="block text-xs font-bold uppercase tracking-widest text-wine/40 mb-2">Select Service</label>
                   <select 
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none transition-colors"
+                    className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none transition-colors"
                     value={bookingForm.service}
                     onChange={e => setBookingForm({...bookingForm, service: e.target.value})}
                   >
-                    <option value="" className="bg-salon-black">Choose a service...</option>
+                    <option value="" className="bg-pink">Choose a service...</option>
                     {Object.values(SERVICES).flat().map(s => (
-                      <option key={s.name} value={s.name} className="bg-salon-black">{s.name}</option>
+                      <option key={s.name} value={s.name} className="bg-pink">{s.name}</option>
                     ))}
                   </select>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Date</label>
+                    <label className="block text-xs font-bold uppercase tracking-widest text-wine/40 mb-2">Date</label>
                     <input 
                       type="date" 
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none transition-colors"
+                      className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none transition-colors"
                       value={bookingForm.date}
                       onChange={e => setBookingForm({...bookingForm, date: e.target.value})}
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Time</label>
+                    <label className="block text-xs font-bold uppercase tracking-widest text-wine/40 mb-2">Time</label>
                     <input 
                       type="time" 
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none transition-colors"
+                      className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none transition-colors"
                       value={bookingForm.time}
                       onChange={e => setBookingForm({...bookingForm, time: e.target.value})}
                     />
@@ -375,23 +375,23 @@ export default function App() {
 
               <div className="space-y-6">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Full Name</label>
+                  <label className="block text-xs font-bold uppercase tracking-widest text-wine/40 mb-2">Full Name</label>
                   <input 
                     type="text" 
                     required
                     placeholder="Your name"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none transition-colors"
+                    className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none transition-colors"
                     value={bookingForm.name}
                     onChange={e => setBookingForm({...bookingForm, name: e.target.value})}
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-widest text-white/40 mb-2">Phone Number</label>
+                  <label className="block text-xs font-bold uppercase tracking-widest text-wine/40 mb-2">Phone Number</label>
                   <input 
                     type="tel" 
                     required
                     placeholder="081 553 5444"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none transition-colors"
+                    className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none transition-colors"
                     value={bookingForm.phone}
                     onChange={e => setBookingForm({...bookingForm, phone: e.target.value})}
                   />
@@ -409,60 +409,60 @@ export default function App() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-zinc-950/50">
+      <section className="py-24 bg-wine/5">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-display font-bold mb-12">What Our Clients Say</h2>
-          <div className="glass-dark p-12 rounded-[40px] max-w-2xl mx-auto border-gold/10">
+          <div className="glass-dark p-12 rounded-[40px] max-w-2xl mx-auto border-wine/10">
             <div className="flex justify-center gap-1 mb-6">
-              {[1,2,3,4,5].map(i => <Star key={i} size={20} className="fill-gold text-gold" />)}
+              {[1,2,3,4,5].map(i => <Star key={i} size={20} className="fill-wine text-wine" />)}
             </div>
-            <p className="text-xl italic text-white/80 mb-8">
+            <p className="text-xl italic text-wine/80 mb-8">
               "Be the first to review our services and share your experience."
             </p>
-            <div className="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mx-auto text-gold mb-4">
+            <div className="w-12 h-12 rounded-full bg-wine/10 flex items-center justify-center mx-auto text-wine mb-4">
               <Sparkles size={24} />
             </div>
-            <p className="font-bold tracking-widest uppercase text-xs">Switchesty Beauty</p>
+            <p className="font-bold tracking-widest uppercase text-xs text-wine">Switchesty Beauty</p>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-salon-black">
+      <section id="contact" className="py-24 bg-pink">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-20">
             <div>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">Get In Touch</h2>
-              <p className="text-white/60 mb-12 leading-relaxed">
+              <p className="text-wine/60 mb-12 leading-relaxed">
                 Have questions or want to book a special session? Reach out to us via any of the channels below.
               </p>
 
               <div className="space-y-8">
                 <div className="flex items-start gap-6">
-                  <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center text-gold shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-wine/10 flex items-center justify-center text-wine shrink-0">
                     <MapPin size={24} />
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Our Location</h4>
-                    <p className="text-white/60">434 Hendrik Van Eck Blvd, Vanderbijlpark, Gauteng</p>
+                    <p className="text-wine/60">434 Hendrik Van Eck Blvd, Vanderbijlpark, Gauteng</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center text-gold shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-wine/10 flex items-center justify-center text-wine shrink-0">
                     <Phone size={24} />
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Phone / WhatsApp</h4>
-                    <p className="text-white/60">081 553 5444</p>
+                    <p className="text-wine/60">081 553 5444</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center text-gold shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-wine/10 flex items-center justify-center text-wine shrink-0">
                     <Mail size={24} />
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Email Address</h4>
-                    <p className="text-white/60">switchestybeauty@gmail.com</p>
+                    <p className="text-wine/60">switchestybeauty@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -475,10 +475,10 @@ export default function App() {
               </div>
             </div>
 
-            <div className="glass-dark p-8 rounded-3xl border-white/10">
-              <div className="aspect-video rounded-2xl overflow-hidden mb-8 bg-zinc-900 border border-white/5">
+            <div className="glass-dark p-8 rounded-3xl border-wine/10">
+              <div className="aspect-video rounded-2xl overflow-hidden mb-8 bg-wine/5 border border-wine/5">
                 {/* Map Placeholder */}
-                <div className="w-full h-full flex items-center justify-center text-white/20 flex-col gap-4">
+                <div className="w-full h-full flex items-center justify-center text-wine/20 flex-col gap-4">
                   <MapPin size={48} />
                   <p className="text-sm">Vanderbijlpark, Gauteng Map View</p>
                 </div>
@@ -488,19 +488,19 @@ export default function App() {
                 <input 
                   type="text" 
                   placeholder="Your Name" 
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none"
+                  className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none"
                 />
                 <input 
                   type="email" 
                   placeholder="Email Address" 
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none"
+                  className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none"
                 />
                 <textarea 
                   placeholder="Your Message" 
                   rows={4}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-gold outline-none"
+                  className="w-full bg-pink/50 border border-wine/10 rounded-xl px-4 py-3 text-wine focus:border-wine outline-none"
                 ></textarea>
-                <button className="w-full py-4 rounded-xl bg-gold text-salon-black font-bold hover:bg-gold-light transition-colors">
+                <button className="w-full py-4 rounded-xl bg-wine text-pink font-bold hover:bg-rose hover:text-wine transition-colors">
                   Send Message
                 </button>
               </form>
@@ -510,80 +510,80 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-20 bg-zinc-950 border-t border-white/5">
+      <footer className="py-20 bg-wine border-t border-wine/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 lg:col-span-1">
               <div className="flex items-center gap-3 mb-6">
                 <img 
-                  src="https://res.cloudinary.com/dm7sxhaeb/image/upload/v1773729703/IMG-20260316-WA0006_Background_btomvu.png" 
+                  src="https://res.cloudinary.com/dm7sxhaeb/image/upload/v1773742544/IMG-20260316-WA0006_wefwsm.jpg" 
                   alt="Switchesty Beauty Logo" 
-                  className="h-10 w-auto rounded-full border border-gold/30"
+                  className="h-10 w-auto rounded-full border border-pink/30"
                   referrerPolicy="no-referrer"
                 />
                 <div className="flex flex-col">
-                  <span className="text-xl font-display font-bold tracking-tighter text-gradient-gold leading-none">
+                  <span className="text-xl font-display font-bold tracking-tighter text-pink leading-none">
                     SWITCHESTY
                   </span>
-                  <span className="text-[10px] tracking-[0.3em] font-light text-white/60 mt-1 leading-none">BEAUTY</span>
+                  <span className="text-[10px] tracking-[0.3em] font-light text-pink/60 mt-1 leading-none">BEAUTY</span>
                 </div>
               </div>
-              <p className="text-white/40 text-sm leading-relaxed mb-8">
+              <p className="text-pink/40 text-sm leading-relaxed mb-8">
                 Crafting beauty and confidence through expert care and modern styling. Your premium destination for salon excellence.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-white/60 hover:text-gold transition-colors">
+                <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-pink/60 hover:text-pink transition-colors">
                   <Instagram size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-white/60 hover:text-gold transition-colors">
+                <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-pink/60 hover:text-pink transition-colors">
                   <Facebook size={18} />
                 </a>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-gold">Quick Links</h4>
-              <ul className="space-y-4 text-sm text-white/50">
-                <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-                <li><a href="#gallery" className="hover:text-white transition-colors">Gallery</a></li>
-                <li><a href="#booking" className="hover:text-white transition-colors">Book Now</a></li>
+              <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-pink">Quick Links</h4>
+              <ul className="space-y-4 text-sm text-pink/50">
+                <li><a href="#home" className="hover:text-pink transition-colors">Home</a></li>
+                <li><a href="#about" className="hover:text-pink transition-colors">About Us</a></li>
+                <li><a href="#services" className="hover:text-pink transition-colors">Services</a></li>
+                <li><a href="#gallery" className="hover:text-pink transition-colors">Gallery</a></li>
+                <li><a href="#booking" className="hover:text-pink transition-colors">Book Now</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-gold">Services</h4>
-              <ul className="space-y-4 text-sm text-white/50">
-                <li><a href="#" className="hover:text-white transition-colors">Nail Care</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Hair Braiding</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Gents Grooming</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Kids Styling</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Hair Treatments</a></li>
+              <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-pink">Services</h4>
+              <ul className="space-y-4 text-sm text-pink/50">
+                <li><a href="#" className="hover:text-pink transition-colors">Nail Care</a></li>
+                <li><a href="#" className="hover:text-pink transition-colors">Hair Braiding</a></li>
+                <li><a href="#" className="hover:text-pink transition-colors">Gents Grooming</a></li>
+                <li><a href="#" className="hover:text-pink transition-colors">Kids Styling</a></li>
+                <li><a href="#" className="hover:text-pink transition-colors">Hair Treatments</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-gold">Newsletter</h4>
-              <p className="text-sm text-white/50 mb-4">Subscribe to get special offers and beauty tips.</p>
+              <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-pink">Newsletter</h4>
+              <p className="text-sm text-pink/50 mb-4">Subscribe to get special offers and beauty tips.</p>
               <div className="flex gap-2">
                 <input 
                   type="email" 
                   placeholder="Email" 
-                  className="bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm outline-none w-full"
+                  className="bg-pink/5 border border-pink/10 rounded-lg px-3 py-2 text-sm outline-none w-full text-pink"
                 />
-                <button className="p-2 rounded-lg bg-gold text-salon-black">
+                <button className="p-2 rounded-lg bg-pink text-wine">
                   <ChevronRight size={20} />
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30">
+          <div className="pt-8 border-t border-pink/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-pink/30">
             <p>© 2026 Switchesty Beauty. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-white">Privacy Policy</a>
-              <a href="#" className="hover:text-white">Terms of Service</a>
+              <a href="#" className="hover:text-pink">Privacy Policy</a>
+              <a href="#" className="hover:text-pink">Terms of Service</a>
             </div>
           </div>
         </div>

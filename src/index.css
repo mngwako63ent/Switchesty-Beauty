@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
+  --color-rose: #bd7880;
+  --color-pine: #102b1f;
+  --color-wine: #4d0011;
+  --color-pink: #ffd9d9;
   --color-gold: #D4AF37;
   --color-gold-light: #F9F6EE;
-  --color-nude: #E3BC9A;
-  --color-nude-dark: #C68E65;
-  --color-salon-black: #0A0A0A;
   
   --font-display: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
@@ -15,41 +16,37 @@
 
 @layer base {
   body {
-    @apply bg-salon-black text-white font-sans antialiased selection:bg-gold/30;
+    @apply bg-pink text-wine font-sans antialiased selection:bg-rose/30;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-display text-wine;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+    @apply bg-white/40 backdrop-blur-md border border-wine/10 shadow-xl;
   }
   
   .glass-dark {
-    @apply bg-black/40 backdrop-blur-lg border border-white/10 shadow-2xl;
+    @apply bg-rose/20 backdrop-blur-lg border border-wine/5 shadow-2xl;
   }
 
   .glass-button {
     @apply relative overflow-hidden rounded-full px-8 py-3 
-           bg-white/10 backdrop-blur-md border border-white/30
-           shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]
+           bg-wine text-pink border border-wine/30
+           shadow-[0_8px_32px_0_rgba(77,0,17,0.2)]
            transition-all duration-300 ease-out
-           hover:bg-white/20 hover:border-white/50 hover:scale-105
+           hover:bg-wine/90 hover:scale-105
            active:scale-95;
-    /* Neumorphic highlight */
-    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 
-                0 10px 20px rgba(0, 0, 0, 0.3);
   }
 
-  .glass-button::before {
-    content: "";
-    @apply absolute inset-0 bg-gradient-to-b from-white/20 to-transparent opacity-50 pointer-events-none;
+  .text-gradient-wine {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-wine via-rose to-wine;
   }
-
-  .text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold via-gold-light to-gold;
+  
+  .text-gradient-pine {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pine via-wine to-pine;
   }
 }
